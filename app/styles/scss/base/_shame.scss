@@ -1,0 +1,291 @@
+//**
+// Shameful Quick Fixes (Tidy Later)
+//**
+
+.section-content {
+  padding: 20px 0;
+}
+
+.main-section-title {
+  font-size: 110px;
+  &.with-drop-shadow {
+    text-shadow: 1px 2px 1px $black;
+  }
+}
+
+.section-content-header {
+  text-align: center;
+  padding: 35px 0;
+  font-size: 80px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  &.with-subtext {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.section-content-subheader {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+  padding-top: 8px;
+}
+
+.food-row {
+  display: table;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-color;
+}
+
+.food-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.food-cell-left {
+  width: 100px;
+  vertical-align: top;
+  position: relative;
+}
+
+.food-cell-middle {
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+.food-cell-right {
+  width: 100px;
+  text-align: right;
+  font-size: 1.2rem;
+  border-left: 1px solid $border-color;
+}
+
+.food-row-data-img {
+  display: block;
+}
+
+.food-cell-data-ingredient {
+  display: inline-block;
+  padding: 0 4px;
+  background-color: $text-main-color;
+  border: 1px solid $text-main-color;
+  color: $white;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  cursor: default;
+  &.optional {
+    background-color: $body-bg-col;
+    color: $text-main-color
+  }
+}
+
+.food-cell-data-name {
+  line-height: 1em;
+  margin-bottom: 4px;
+  font-family: $secondary-font;
+  font-size: 1.8rem;
+}
+
+.food-cell-img-overlayer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.food-cell-ingred-string-wrap {
+  display: none;
+  color: $white;
+}
+
+.food-cell-price-innerwrap {
+  position: relative;
+  &:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background: $border-color;
+    left: 20px;
+    right: 0;
+  }
+}
+
+%food-cell-right-nr {
+  font-weight: 700;
+}
+
+%food-cell-right-um {
+  font-size: 1rem;
+}
+
+.food-cell-data-price-nr {
+  @extend %food-cell-right-nr;
+}
+
+.food-cell-data-price-curr {
+  @extend %food-cell-right-um;
+}
+
+.food-cell-data-weight-nr {
+  @extend %food-cell-right-nr;
+}
+
+.food-cell-data-weight-curr {
+  @extend %food-cell-right-um;
+}
+
+.map-container {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  margin-top: 25px;
+  iframe {
+    display: block;
+  }
+}
+
+.section-content-header-text {
+  position: relative;
+  &:before {
+    content: ' ';
+    position: absolute;
+    bottom: -4px;
+    left: 25px;
+    right: 25px;
+    height: 1px;
+    background-color: $border-color;
+  }
+}
+
+//footer section
+.footer-section {
+  background-color: $text-main-color;
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-section-text {
+  padding: 7px 0;
+}
+
+.main-slide-chevron-wrap {
+  position: absolute;
+  bottom: 11px;
+  font-size: 37px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.main-slide-chevron-elem {
+  color: $white !important;
+  &.animating {
+    animation: fontGrowth 1s ease-out;
+    animation-iteration-count: infinite;
+  }
+}
+
+.big-font-again {
+  font-size: 120px !important;
+}
+
+@-moz-keyframes fontGrowth {
+  0%, 100% {
+    font-size: 37px;
+  }
+  25% {
+    font-size: 47px
+  }
+  50% {
+    font-size: 57px
+  }
+  75% {
+    font-size: 47px
+  }
+}
+
+@-webkit-keyframes fontGrowth {
+  0%, 100% {
+    font-size: 37px;
+  }
+  25% {
+    font-size: 47px
+  }
+  50% {
+    font-size: 57px
+  }
+  75% {
+    font-size: 47px
+  }
+}
+
+@keyframes fontGrowth {
+  0%, 100% {
+    font-size: 37px;
+  }
+  25% {
+    font-size: 47px
+  }
+  50% {
+    font-size: 57px
+  }
+  75% {
+    font-size: 47px
+  }
+}
+
+.main-section-title-inner {
+  display: inline-block;
+}
+
+.main-section-title-inner-h2 {
+  text-align: right;
+  line-height: 0;
+  margin-top: -14px;
+}
+.big-font-again-h2{
+  font-size: 46px !important;
+}
+
+//.main-section-title-inner {
+//  display: inline-block;
+//  position: relative;
+//  &:after {
+//    transition: 0.2s all linear;
+//    content: '';
+//    height: 1px;
+//    position: absolute;
+//    bottom: 10px;
+//    background: transparent;
+//    width: 518px;
+//    right: 0;
+//  }
+//  &:before {
+//    transition: 0.2s all linear;
+//    content: '';
+//    height: 1px;
+//    position: absolute;
+//    bottom: 10px;
+//    background: transparent;
+//    width: 72px;
+//    left: 0;
+//  }
+//  &.with-underline {
+//    &:after {
+//      background: white;
+//      box-shadow: 1px 1px 1px 0px black;
+//    }
+//    &:before {
+//      background: white;
+//      box-shadow: 1px 1px 1px 0px black;
+//    }
+//  }
+//}
+
+main {
+  display: block;
+}

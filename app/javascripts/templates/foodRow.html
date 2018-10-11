@@ -1,0 +1,55 @@
+<div class="food-row" id="<%=id%>">
+    <div class="food-cell food-cell-left">
+        <img class="food-row-data-img noselect" src="<%=imgLarge%>" alt="<%=nume%>">
+        <div class="food-cell-img-overlayer"></div>
+    </div>
+    <div class="food-cell food-cell-middle">
+        <div class="food-cell-middle-upper">
+            <div class="food-cell-data-name">
+                <span class="food-cell-name-inner">
+                    <%=nume%>
+                </span>
+                <% if (ingredientsOptional.length > 0) { %>
+                    <span class="food-cell-name-inner">
+                        (la alegere)
+                    </span>
+                <% } %>
+                <span class="food-cell-name-inner-choice"></span>
+            </div>
+        </div>
+        <div class="food-cell-middle-lower">
+            <div class="food-cell-ingred-arr-wrap">
+                <% for (var i = 0; i < ingredients.length; i++) { %>
+                    <span class="food-cell-data-ingredient"><%=ingredients[i]%></span>
+                <% } %>
+                <% for (var i = 0; i < ingredientsOptional.length; i++) { %>
+                    <span class="food-cell-data-ingredient optional js-has-tooltip" data-mode="top" data-tip="La alegere"><%=ingredientsOptional[i]%></span>
+                <% } %>
+            </div>
+            <div class="food-cell-ingred-string-wrap">
+                <%=ingredientsString%>
+            </div>
+        </div>
+    </div>
+    <div class="food-cell food-cell-right">
+        <div class="food-cell-price-outerwrap">
+            <div class="food-cell-price-innerwrap">
+                <span class="food-cell-data-price-nr">
+                    <%=price.number%>
+                </span>
+                <span class="food-cell-data-price-curr">
+                    <%=price.currency%>
+                </span>
+            </div>
+
+            <div class="food-cell-weight-innerwrap">
+                <span class="food-cell-data-weight-nr">
+                    <%=weight.number%>
+                </span>
+                <span class="food-cell-data-weight-curr">
+                    <%=weight.um%>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

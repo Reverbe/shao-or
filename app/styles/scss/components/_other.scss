@@ -1,0 +1,95 @@
+//**
+// Other Useful Reusable Styles
+//**
+
+* {
+  box-sizing: border-box !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.list-unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.v-top{
+  vertical-align: top;
+}
+.valign {
+  vertical-align: middle;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  margin: $padding 0;
+}
+
+.subtle {
+  color: $subtle-color;
+}
+
+.relative {
+  position: relative;
+}
+
+.t-capitalize{
+  text-transform: capitalize;
+}
+
+.t-truncate{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.t-error{
+  color: $red;
+}
+
+.fullwidth{
+  width: 100%;
+}
+.fullheight{
+  height: 100%;
+}
+.d-table{
+  display: table;
+}
+.d-table-cell{
+  display: table-cell;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}

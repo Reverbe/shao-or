@@ -1,0 +1,71 @@
+//**
+// Project Settings
+//**
+
+// Import fonts from Google
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700|Rancho');
+$primary-font: 'Josefin Sans', sans-serif;
+$secondary-font: 'Rancho', cursive;
+
+// Consistent settings
+$br: 0px; // Border-radius
+$btn-br: 0px; // Button border-radius
+$font-size: 18px; // Global default font size
+$padding: 40px; // Padding and margins
+$line-height: 44px; // Consistent height for buttons, inputs etc.
+
+$text-main-color: #3B3B3B;
+
+// Responsive breakpoints
+$small-break: 480px;
+$big-break: 780px;
+
+
+// Better default colors
+// Cool
+$aqua:  #7fdbff;
+$blue:  #0074d9;
+$navy:  #001f3f;
+$teal:  #39cccc;
+$green: #2ecc40;
+$olive: #3d9970;
+$lime:  #01ff70;
+// Warm
+$yellow:  #ffdc00;
+$orange:  #ff851b;
+$red: #d60600;
+$fuchsia: #f012be;
+$purple:  #b10dc9;
+$maroon:  #85144b;
+// Gray Scale
+$white:  #fff;
+$silver: #ddd;
+$grey:   #aaa;
+$black:  #111;
+
+$danger-color: $red; // Bad color for errors, validation etc.
+$success-color: $green; // Good color for success etc.
+$info-color: $blue; // Good color for success etc.
+$warning-color: $orange; // Good color for success etc.
+$subtle-color: $grey; // Subtle color for subtle text
+
+$body-bg-col: #f7f7f7;
+
+//component specific sizes and positioning
+$border-color: #eaeaea;
+$border-background-color: #f4f4f4;
+$navbar-border-color: rgba(192, 194, 197, 0.34);
+
+$primary-color: #002E6A;
+$secondary-color: #6BAED7;
+
+$dark-hover-color: darken($secondary-color, 5%);
+$light-hover-color: lighten($secondary-color, 23%);
+
+$main-navbar-height: 50px;
+$secondary-navbar-height: 35px;
+
+$dropdown-background-color: $white;
+
+$tree-view-leaf-line-height: 30px;
+@import "../main";

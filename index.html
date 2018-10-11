@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="app/dist/index-styles.css">
+
+    <script>
+        var css = '.main-section-title-inner-h1, .main-section-title-inner-h2 { font-size: 0; }',
+                head = document.head || document.getElementsByTagName('head')[0],
+                style = document.createElement('style');
+
+        style.type = 'text/css';
+        if (style.styleSheet){
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
+
+        head.appendChild(style);
+    </script>
+</head>
+
+<body>
+
+    <div id="appContainer" class="app-container">
+        <!--NAVBAR-->
+        <nav id="navBar" class="navbar-container">
+            <div class="container">
+                <a href="#anchor_meniu" class="navbar-item fx-all js-link-slider">
+                    Meniu
+                </a>
+                <a href="#anchor_comenzi" class="navbar-item fx-all js-link-slider">
+                    Comenzi
+                </a>
+
+                <a href="#topSection" class="navbar-item navbar-item-right js-link-slider js-navbar-backtotop">
+                    <span class="fa fa-chevron-up"></span>
+                </a>
+            </div>
+        </nav>
+
+        <!--FRONT PAGE SLIDE-->
+        <section id="topSection" class="top-section-slide fx-all">
+            <div id="topSectionTabCell" class="top-section-slide-inner fx-all">
+                <h1 id="mainSectionTitle" class="main-section-title">
+                    <div class="main-section-title-inner" id="mainSectionTitleInner">
+                        <div class="main-section-title-inner-h1 fx-all">
+                            Express Fast Food
+                        </div>
+                        <div class="main-section-title-inner-h2 fx-all">
+                            Oradea
+                        </div>
+                    </div>
+                </h1>
+                <div class="main-slide-chevron-wrap">
+                    <a id="chevronSlider" href="#anchor_meniu" class="main-slide-chevron-elem animating js-link-slider">
+                        <span class="main-slide-chevron-elem-icon fa fa-chevron-down">
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--MENU SLIDE-->
+        <main class="section-content next-section-slide" id="anchor_meniu">
+            <div class="container">
+                <h1 class="section-content-header">
+                    <span class="section-content-header-text">Meniu</span>
+                </h1>
+            </div>
+            <div class="container">
+                <div id="menuSlideContent" class="food-listing-wrap">
+
+                </div>
+            </div>
+        </main>
+
+        <!--LOCATION SLIDE-->
+        <section class="section-content location-secion-slide" id="anchor_comenzi">
+            <div class="container section-separator">
+                <h1 class="section-content-header with-subtext">
+                    <span class="section-content-header-text">Comenzi</span>
+                </h1>
+                <div class="section-content-subheader">
+                    Comanda minima: 30 RON
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <div class="six columns side-by-side-col-fix">
+                        <div id="contactSlideContent" class="orar-listing-wrap"></div>
+                    </div>
+                    <div class="six columns side-by-side-col-fix">
+                        <h3 class="header-vis-low-res">
+                            Orar
+                        </h3>
+                        <div id="orarSlideContent" class="orar-listing-wrap"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <!--<div class="map-image">-->
+                    <!--<img src="https://storage.rcs-rds.ro/content/links/28c4457d-4d2b-4ba3-a56a-dee6d5ae8947/files/get/maga.jpg?path=maga.jpg" alt="imagine locatie">-->
+                <!--</div>-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d679.888162263813!2d21.955778755444182!3d47.02938540641811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4746386f78397be5%3A0x570324995c02d08!2sStrada+Nuf%C4%83rului+85%2C+Oradea!5e0!3m2!1sen!2sro!4v1477703164811" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <!--FOOTER SECTION-->
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-section-text">
+                    Copyright © Express Food Oradea - Nufarului 55
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app/dist/shared.js"></script>
+    <script src="app/dist/index-prod.js"></script>
+</body>
+
+</html>

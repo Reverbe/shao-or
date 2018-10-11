@@ -1,0 +1,38 @@
+// Reset default browser styles using Normalize
+$fa-font-path: "~font-awesome/fonts";
+@import "../../../node_modules/font-awesome/scss/font-awesome.scss";
+
+// Set variables and reusable mixins
+@import "base/mixins";
+
+// Import typical layout styles
+@import "base/type";
+
+// Specific project styles, add any section specific sass modules here
+@import "pages/layout";
+@import "pages/home";
+
+// Import reusable modules
+@import "components/scrollbar";
+@import "components/media";
+@import "components/buttons";
+@import "components/tables";
+@import "components/forms";
+@import "components/alerts";
+@import "components/nav";
+@import "components/other";
+@import "components/orar";
+@import "components/preLoader";
+
+// 3rd party
+@import "thirdParty/tooltip";
+
+// If IE support is needed
+@import "base/ie";
+
+// For anything quick and dirty that needs thrown in
+@import "base/shame";
+
+// Additional styles to think about
+@import "base/responsive";
+@import "base/print";
